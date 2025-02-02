@@ -7,7 +7,9 @@ export default function LaMasia() {
 
       <section className="la_masia">
         <section className="la_masia__conteudo">
-          <h2 className="la_masia__conteudo__titulo">LA MASIA</h2>
+          <h2 className="la_masia__conteudo__titulo" id="la_masia">
+            LA MASIA
+          </h2>
 
           <section className="la_masia__conteudo__sobre">
             <p className="la_masia__conteudo__paragrafo">

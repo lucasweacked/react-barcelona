@@ -3,7 +3,7 @@ import "./Main.css";
 export default function Main() {
   return (
     <>
-      <main className="principal">
+      <main className="principal" id="principal">
         <section className="principal__conteudo">
           <h2 className="principal__conteudo__titulo">HISTÓRIA</h2>
 

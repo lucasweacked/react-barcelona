@@ -1,6 +1,17 @@
 import "./Header.css";
 
 export default function Header() {
+  function scrollToElement(
+    event: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+  ) {
+    event.preventDefault();
+    const index = event.currentTarget.href.indexOf("#");
+    const id = event.currentTarget.href.slice(1 + index);
+
+    const element = document.getElementById(id);
+    element?.scrollIntoView({ behavior: "smooth" });
+  }
+
   return (
     <>
       <header className="cabecalho">
@@ -10,10 +21,14 @@ export default function Header() {
               <a href="#">INÍCIO</a>
             </li>
             <li id="link1" className="cabecalho__menu__link__links">
-              <a href="#">HISTÓRIA</a>
+              <a href="#principal" onClick={scrollToElement}>
+                HISTÓRIA
+              </a>
             </li>
             <li id="link2" className="cabecalho__menu__link__links">
-              <a href="#">LA MASIA</a>
+              <a href="#la_masia" onClick={scrollToElement}>
+                LA MASIA
+              </a>
             </li>
           </ul>
 

@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    /* Cores do Barcelona */
+    --barcelonaAzul: #004D98;
+    /* Azul */
+    --barcelonaGrena: #A50044;
+    /* Grená */
+    --barcelonaAmarelo: #FFCB05;
+    /* Amarelo */
+
+    /* Cores da bandeira da Catalunha */
+    --cataloniaAmarelo: #FFCC00;
+    /* Amarelo */
+    --cataloniaVermelho: #DA291C;
+    /* Vermelho */
+
+    --corBranca: #f7f7f7;
+    --corPreta: #000000;
+    --corAzul: #154284;
+    --corBackground: #111226;
+
+    --fontPrincipal: 'Montserrat', sans-serif;
+    --fontSecundaria: 'Krona One', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--corBackground);
+    overflow-x: hidden;
+}

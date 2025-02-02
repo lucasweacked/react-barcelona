@@ -1,10 +1,15 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.tsx'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
 
-createRoot(document.getElementById('root')!).render(
+import Header from "./components/Header/Header";
+import Main from "./components/Main/Main";
+import LaMasia from "./components/LaMasia/LaMasia";
+
+createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <App />
-  </StrictMode>,
-)
+    <Header />
+    <Main />
+    <LaMasia />
+  </StrictMode>
+);

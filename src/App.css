@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+  /* Cores do Barcelona */
+  --barcelonaAzul: #004D98;
+  /* Azul */
+  --barcelonaGrena: #A50044;
+  /* Grená */
+  --barcelonaAmarelo: #FFCB05;
+  /* Amarelo */
+
+  /* Cores da bandeira da Catalunha */
+  --cataloniaAmarelo: #FFCC00;
+  /* Amarelo */
+  --cataloniaVermelho: #DA291C;
+  /* Vermelho */
+
+  --corBranca: #f7f7f7;
+  --corPreta: #000000;
+  --corAzul: #154284;
+  --corBackground: #111226;
+
+  --fontPrincipal: 'Montserrat', sans-serif;
+  --fontSecundaria: 'Krona One', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--corBackground);
+  overflow-x: hidden;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.cabecalho__menu {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.cabecalho__menu__logo {
+  height: 80px;
+}
+
+.cabecalho__menu__link {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.cabecalho__menu__link__links a {
+  font-size: 1rem;
+  font-family: var(--fontPrincipal);
+  font-weight: 600;
+  color: var(--corBranca);
+  text-decoration: none;
+}
+
+.cabecalho__menu__logo {
+  height: 80px;
+}
+
+.principal {
+  padding: 2rem 10rem;
+}
+
+.principal__conteudo__titulo {
+  font-size: 1.5rem;
+  font-family: var(--fontPrincipal);
+  color: var(--corBranca);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.principal__conteudo__sobre {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.principal__conteudo__paragrafo {
+  font-size: 1rem;
+  font-family: var(--fontPrincipal);
+  color: var(--corBranca);
+}
+
+.faixa {
+  padding: 5px;
+  background: linear-gradient(90deg, rgba(0, 77, 152, 1) 40%, rgba(165, 0, 68, 1) 60%);
+}
+
+.la_masia {
+  padding: 2rem 10rem;
+  background-color: var(--corBranca);
+}
+
+.la_masia__conteudo__titulo {
+  font-size: 1.5rem;
+  font-family: var(--fontPrincipal);
+  color: var(--corPreta);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.la_masia__conteudo__sobre {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.la_masia__conteudo__paragrafo {
+  font-size: 1rem;
+  font-family: var(--fontPrincipal);
+  color: var(--corPreta);
+}
